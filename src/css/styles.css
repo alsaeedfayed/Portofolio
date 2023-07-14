@@ -3,6 +3,31 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --bgColor: #081b29;
+  --secondBgColor: #112e42;
+  --textColor: #ededed;
+  --mainColor: #00abf0;
+}
+
+@layer components {
+  .btn-bg-animated {
+    @apply p-2 btn relative inline-flex h-full justify-center items-center w-64 bg-mainColor border-2 border-mainColor rounded-lg text-3xl capitalize font-semibold text-bgColor leading-tight overflow-hidden;
+  }
+
+  .textHeading {
+    @apply font-semibold text-5xl capitalize;
+  }
+
+  .textP {
+    @apply text-3xl mt-16 mb-16;
+  }
+
+  .centrallizedDiv {
+    @apply flex justify-center items-center flex-col gap-2 pb-16;
+  }
+}
+
 * {
   font-family: "Poppins" sans-serif;
   padding: 0;
@@ -19,7 +44,7 @@ html {
 }
 
 body {
-  color: #ededed;
+  color: var(--textColor);
 }
 
 /* header */
@@ -32,9 +57,134 @@ body {
   transition: color 0.5s ease;
 }
 .navbar a.active {
-  color: #00abf0;
+  color: var(--mainColor);
 }
 
 #menu-icon {
   display: none;
+}
+
+/*section*/
+.container {
+  min-height: 88vh;
+  padding: 10rem 0 2rem;
+}
+.homeSection {
+  min-height: 88vh;
+  padding: 10rem 0 2rem;
+  background: url("../assets/images/saeednoback\ \(1\).png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-size: 600px;
+  cursor: pointer;
+}
+.home {
+  /* padding: 0 9%; */
+}
+
+.home-content {
+  max-width: 60rem;
+}
+.home-content h1 {
+  line-height: 1.5;
+}
+.text-animate {
+  width: 32.8rem;
+}
+
+.text-animate h3 {
+  -webkit-text-stroke: 0.7px var(--mainColor);
+}
+
+.btn-box {
+  width: 34.5rem;
+  height: 5rem;
+}
+
+.btn-box .btn {
+  z-index: 1;
+  border: 0.2em solid var(--mainColor);
+  transition: 0.5s;
+}
+
+.btn-box .btn:hover {
+  color: var(--mainColor);
+}
+
+.btn-box .btn::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background: var(--bgColor);
+  transition: width 0.5s ease;
+}
+
+.btn-box .btn:nth-child(2) {
+  background: transparent;
+  color: var(--mainColor);
+}
+
+.btn-box .btn:nth-child(2)::before {
+  background: var(--mainColor);
+}
+.btn-box .btn:nth-child(2):hover {
+  color: var(--bgColor);
+}
+
+.btn-box .btn:hover::before {
+  width: 100%;
+}
+
+/*social icons*/
+.home-sci {
+  width: 270px;
+}
+.home-sci a {
+  width: 40px;
+  height: 40px;
+  border: 2px solid var(--mainColor);
+  color: var(--mainColor);
+  z-index: 1;
+  overflow: hidden;
+  transition: 0.5s ease;
+}
+.home-sci a i {
+  color: var(--mainColor);
+}
+.home-sci a:hover > i {
+  color: var(--bgColor);
+}
+.home-sci a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background: var(--mainColor);
+  z-index: -1;
+  transition: width 0.5s ease;
+}
+
+.home-sci a:hover::before {
+  width: 100%;
+}
+
+/* hover profile effect */
+.homeImageHover {
+  position: absolute;
+  width: 45%;
+  right: 0;
+  top: 0;
+  height: 100%;
+  transition: 2s ease-out;
+}
+.homeImageHover:hover {
+  background: var(--bgColor);
+  opacity: 0.8;
 }
