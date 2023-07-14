@@ -20,7 +20,7 @@
   }
 
   .textP {
-    @apply text-3xl mt-16 mb-16;
+    @apply text-3xl mt-16 mb-16 leading-10 inline-flex justify-start items-start;
   }
 
   .centrallizedDiv {
@@ -67,7 +67,7 @@ body {
 /*section*/
 .container {
   min-height: 88vh;
-  padding: 10rem 0 2rem;
+  padding: 10rem 0 8rem;
 }
 .homeSection {
   min-height: 88vh;
@@ -187,4 +187,23 @@ body {
 .homeImageHover:hover {
   background: var(--bgColor);
   opacity: 0.8;
+}
+
+/*about*/
+.about-img .circle-spin {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(0);
+  width: 114%;
+  height: 114%;
+  border-radius: 50%;
+  border-top: 0.2em solid var(--secondBgColor);
+  border-bottom: 0.2em solid var(--secondBgColor);
+  border-right: 0.2em solid var(--mainColor);
+  border-left: 0.2em solid var(--mainColor);
+}
+
+.aboutBtnBox {
+  width: 100%;
 }
