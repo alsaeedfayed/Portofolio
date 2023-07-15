@@ -248,3 +248,54 @@ body {
 .education-content .content:hover::before {
   width: 100%;
 }
+
+/* skills */
+.skills {
+  min-height: auto;
+  position: relative;
+}
+
+.skills-box .skills-content {
+  border: 0.2em solid var(--mainColor);
+  border-radius: 0.5rem;
+  margin-top: 2rem;
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.skills-content .progress .bar {
+  height: 2.5rem;
+  border-radius: 0.6rem;
+  border: 0.2rem solid var(--mainColor);
+  padding: 0.5rem;
+  margin: 1rem 0;
+}
+
+.skills-content .progress .bar span {
+  display: block;
+  height: 100%;
+  border-radius: 0.3rem;
+  background: var(--mainColor);
+}
+
+.skills-col:nth-child(1) .skills-content .progress:nth-child(1) .bar span {
+  width: 90%;
+}
+
+.skills-box .skills-content::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background: var(--bgColor);
+  z-index: -1;
+  transition: 0.5s ease;
+}
+
+.skills-box .skills-content:hover::before {
+  width: 100%;
+}
