@@ -51,6 +51,12 @@ body {
 .header {
   padding: 2rem 9%;
   background: transparent;
+  transition: 0.5s ease;
+  z-index: 2;
+}
+
+.header.sticky {
+  background: var(--bgColor);
 }
 
 .navbar a {
