@@ -1,6 +1,6 @@
 //scroll
 
-let sections = document.querySelectorAll('section');
+let sections = document.querySelectorAll('.container');
 let navLinks = document.querySelectorAll('header nav a');
 
 //menu icon
@@ -23,13 +23,22 @@ window.onscroll = () => {
         let height  = sec.offsetHeight;
         let id = sec.getAttribute('id');
         if(top >= offset && top < offset + height) {
+        sec.classList.add('show-animate')
+
             //active navbar links
             navLinks.forEach(links => {
                 links.classList.remove('active');
                 console.log('id' + document.querySelector('header nav a[href*=' + id + ']'))
                 document.querySelector('header nav a[href*=' + id + ']').classList.add('active')
             })
+
         }
+         else {
+            //to repeat animation whenever scroll
+        sec.classList.remove('show-animate')
+         }
+
+       
     })
 
     //remove active nav when click a link

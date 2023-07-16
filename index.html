@@ -2,101 +2,141 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="./src/assets/icons/faviconsaeed.ico">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="./src/assets/icons/faviconsaeed.ico" />
     <!-- main style -->
-    <link rel="stylesheet" href="./src/css/styles.css">
+    <link rel="stylesheet" href="./src/css/styles.css" />
     <!-- boxicons -->
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
 
     <title>Saeed Fayed</title>
 </head>
 
 <body class="bg-bgColor text-textColor">
     <!-- header design -->
-    <header class="header  fixed flex top-0 left-0 w-full bg-yellow-300 bg-transparent justify-between items-center">
-        <a href="#" class="logo font-semibold text-textColor text-4xl">Saeed.</a>
+    <header class="header fixed flex top-0 left-0 w-full bg-yellow-300 bg-transparent justify-between items-center">
+        <a href="#" class="logo font-semibold text-textColor text-4xl">
+            Saeed.
+            <span class="animate" style="--i: 1;"></span>
+        </a>
 
         <!-- menu icon -->
-        <div class=" bx bx-menu text-5xl text-textColor cursor-pointer" id="menu-icon"></div>
+        <div class="bx bx-menu text-5xl text-textColor cursor-pointer" id="menu-icon">
+            <span class="animate" style="--i: 2;"></span>
+        </div>
 
         <nav class="navbar">
-            <a class="active font-medium text-textColor text-3xl ml-16 hover:text-mainColor" href="#home">Home</a>
-            <a class="font-medium text-textColor text-3xl ml-16 hover:text-mainColor" href="#about">About</a>
-            <a class="font-medium text-textColor text-3xl ml-16 hover:text-mainColor" href="#education">Education</a>
-            <a class="font-medium text-textColor text-3xl ml-16 hover:text-mainColor" href="#skills">Skills</a>
-            <a class="font-medium text-textColor text-3xl ml-16 hover:text-mainColor" href="#contact">Contact</a>
+            <a class="active font-medium text-textColor text-3xl ml-16 hover:text-mainColor" href="#home">
+                Home
+            </a>
+            <a class="font-medium text-textColor text-3xl ml-16 hover:text-mainColor" href="#about">
+                About
+            </a>
+            <a class="font-medium text-textColor text-3xl ml-16 hover:text-mainColor" href="#education">
+                Education
+            </a>
+            <a class="font-medium text-textColor text-3xl ml-16 hover:text-mainColor" href="#skills">
+                Skills
+            </a>
+            <a class="font-medium text-textColor text-3xl ml-16 hover:text-mainColor" href="#contact">
+                Contact
+            </a>
 
+            <span class="animate" style="--i: 2;"></span>
             <span class="active-nav"></span>
         </nav>
     </header>
     <!-- end header -->
 
     <!-- home setion design -->
-    <div class="homeSection container mx-auto mt-32 relative">
-        <section class="home flex items-center " id="home">
+    <div class="homeSection container mx-auto show-animate mt-32 relative" id="home">
+        <section class="home flex items-center">
             <!-- home-content -->
-            <div class="home-content ">
-                <h1 class="text-8xl font-semibold">Hi, I 'm <span class="capitalize">saeed fayed</span></h1>
+            <div class="home-content">
+                <h1 class="text-8xl font-semibold">
+                    Hi, I 'm
+                    <span class="capitalize">saeed fayed</span>
+                    <span class="animate" style="--i: 2;"></span>
+                </h1>
                 <div class="text-animate relative">
-                    <h3 class="textHeading text-transparent">frontend developer
-                    </h3>
+                    <h3 class="textHeading text-transparent">frontend developer</h3>
+                    <span class="animate" style="--i: 3;"></span>
                 </div>
-                <p class="textP">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat ex
-                    accusantium,
-                    consequatur id
-                    voluptatum
-                    ut quia et fuga ea libero rerum nulla suscipit hic harum cupiditate aliquam! Ad, labore praesentium?
+                <p class="textP">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat ex
+                    accusantium, consequatur id voluptatum ut quia et fuga ea libero
+                    rerum nulla suscipit hic harum cupiditate aliquam! Ad, labore
+                    praesentium?
+                    <span class="animate" style="--i: 4;"></span>
                 </p>
 
                 <div class="btn-box flex justify-between relative">
-                    <a href="#" class="btn-bg-animated">hire
-                        me</a>
-                    <a href="#" class="btn-bg-animated">let's
-                        talk</a>
+                    <a href="#" class="btn-bg-animated">hire me</a>
+                    <a href="#" class="btn-bg-animated">let's talk</a>
+
+                    <span class="animate" style="--i: 5;"></span>
                 </div>
             </div>
             <!-- social icons -->
-            <div class="home-sci absolute bottom-12  space-x-8">
-                <a class="relative p-8 inline-flex justify-center items-center  rounded-full s" href="#"><i
-                        class="bx bxl-facebook text-white text-4xl"></i></a>
-                <a class="relative p-8  inline-flex justify-center items-center rounded-full " href="#"><i
-                        class="bx bxl-twitter text-white text-4xl"></i></a>
-                <a class="relative p-8  inline-flex justify-center items-center rounded-full " href="#"><i
-                        class="bx bxl-linkedin text-white text-4xl"></i></a>
+            <div class="home-sci absolute bottom-12">
+                <a class="relative p-8 inline-flex justify-center items-center rounded-full s" href="#">
+                    <i class="bx bxl-facebook text-white text-4xl"></i>
+                </a>
+                <a class="relative p-8 ml-4 inline-flex justify-center items-center rounded-full" href="#">
+                    <i class="bx bxl-twitter text-white text-4xl"></i>
+                </a>
+                <a class="relative p-8 ml-4 inline-flex justify-center items-center rounded-full" href="#">
+                    <i class="bx bxl-linkedin text-white text-4xl"></i>
+                </a>
+                <span class="animate" style="--i: 6;"></span>
             </div>
             <!-- end social icons -->
 
             <!-- home hover effect -->
-            <div class="homeImageHover"></div>
+            <div class="homeImageHover">
+                <span class="animate" style="--i: 7;"></span>
+            </div>
         </section>
     </div>
     <!-- home ends  -->
 
     <!-- about section design -->
-    <div class="container mx-auto">
-        <section class="about centrallizedDiv bg-secondBgColor " id="about">
-            <h2 class="heading textHeading text-center mt-24 mb-8">About <span class="text-mainColor">Me</span></h2>
-            <div class="about-img relative flex justify-center mt-12 items-center  w-96 h-96">
+    <div class="container mx-auto" id="about">
+        <section class="about centrallizedDiv bg-secondBgColor">
+            <h2 class="heading textHeading text-center mt-24 mb-8">
+                About
+                <span class="text-mainColor">Me</span>
+                <span class="animate scroll" style="--i: 1;"></span>
+            </h2>
+            <div class="about-img relative flex justify-center mt-12 items-center w-96 h-96">
                 <img class="rounded-full p-2 w-full h-full border-2 border-dashed border-mainColor"
-                    src="./src/assets/images/myGithubImage.jpeg" alt="myImg">
+                    src="./src/assets/images/myGithubImage.jpeg" alt="myImg" />
+                <span class="animate scroll" style="--i: 2;"></span>
                 <span class="circle-spin"></span>
+
             </div>
             <div class="about-content text-center mt-24">
-                <h3 class="textHeading">web developer</h3>
-                <p class="textP">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui atque ab nesciunt
-                    voluptate, vitae earum
-                    architecto deserunt repellat in et vel modi. Modi placeat porro voluptatem iusto a. Veritatis facere
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius amet minus consequatur accusamus,
-                    deleniti odit quia nam illo blanditiis, harum neque modi! Quibusdam eum molestias ipsa corporis vero
-                    sapiente veniam!
-                    quo
-                    soluta at maiores, aut tempora rerum pariatur exercitationem rem? Dolores optio ad impedit esse
-                    exercitationem culpa ullam aspernatur expedita.</p>
+                <h3 class="textHeading">
+                    web developer
+                    <span class="animate scroll" style="--i: 3;"></span>
+                </h3>
+                <p class="textP">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui atque
+                    ab nesciunt voluptate, vitae earum architecto deserunt repellat in
+                    et vel modi. Modi placeat porro voluptatem iusto a. Veritatis facere
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius amet
+                    minus consequatur accusamus, deleniti odit quia nam illo blanditiis,
+                    harum neque modi! Quibusdam eum molestias ipsa corporis vero
+                    sapiente veniam! quo soluta at maiores, aut tempora rerum pariatur
+                    exercitationem rem? Dolores optio ad impedit esse exercitationem
+                    culpa ullam aspernatur expedita.
+                    <span class="animate scroll" style="--i: 4;"></span>
+                </p>
                 <div class="btn-box aboutBtnBox w-full btns text-center flex justify-center items-center">
                     <a href="#" class="btn-bg-animated">read more</a>
+                    <span class="animate scroll" style="--i: 5;"></span>
                 </div>
             </div>
         </section>
@@ -104,219 +144,297 @@
     <!-- about end -->
 
     <!-- education section design -->
-    <div class="container mb-12 mx-auto">
-        <section class="education relative " id="education">
-            <h2 class=" textHeading text-center  mb-8">My <span class="text-mainColor">Journey</span></h2>
+    <div class="container mb-12 mx-auto" id="education">
+        <section class="education relative">
+            <h2 class="textHeading text-center mb-8">
+                My
+                <span class="text-mainColor">Journey</span>
+                <span class="animate animate-scroll" style="--i: 1;"></span>
+            </h2>
             <div class="education-row flex flex-col md:flex-row md:gap-12 mt-24">
                 <div class="education-col">
-                    <h3 class="title textHeading">education</h3>
+                    <h3 class="title textHeading">
+                        education
+                        <span class="animate animate-scroll" style="--i: 2;"></span>
+                    </h3>
                     <div class="education-box relative mt-12">
                         <div class="relative ml-8 cursor-pointer">
-
                             <div class="education-content">
                                 <div class="content border-2 border-mainColor p-8 rounded-lg mb-4">
-                                    <div class="year space-x-2 text-3xl inline-flex text-mainColor"><i
-                                            class="bx bxs-calendar mr-2 text-3xl"></i>2013 -
-                                        2018</div>
-                                    <h3 class="text-3xl p-3 font-semibold">master degree - computer science - ain shams
-                                        university -cairo</h3>
-                                    <p class="text-2xl">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                                        Assumenda
-                                        dolorem
-                                        magni numquam
-                                        itaque! Beatae quas saepe odio suscipit, impedit voluptate libero rem sit
-                                        reprehenderit
-                                        repudiandae atque! Consequatur nihil fuga eum.</p>
+                                    <div class="year space-x-2 text-3xl inline-flex text-mainColor">
+                                        <i class="bx bxs-calendar mr-2 text-3xl"></i>
+                                        2013 - 2018
+                                    </div>
+                                    <h3 class="text-3xl p-3 font-semibold">
+                                        master degree - computer science - ain shams university
+                                        -cairo
+                                    </h3>
+                                    <p class="text-2xl">
+                                        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                        Assumenda dolorem magni numquam itaque! Beatae quas saepe
+                                        odio suscipit, impedit voluptate libero rem sit
+                                        reprehenderit repudiandae atque! Consequatur nihil fuga
+                                        eum.
+                                    </p>
                                 </div>
                             </div>
 
                             <div class="education-content">
                                 <div class="content border-2 border-mainColor p-8 rounded-lg mb-4">
-                                    <div class="year space-x-2 text-3xl inline-flex text-mainColor"><i
-                                            class="bx bxs-calendar mr-2 text-3xl"></i>2013 -
-                                        2018</div>
-                                    <h3 class="text-3xl p-3 font-semibold">master degree - computer science - ain shams
-                                        university -cairo</h3>
-                                    <p class="text-2xl">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                                        Assumenda
-                                        dolorem
-                                        magni numquam
-                                        itaque! Beatae quas saepe odio suscipit, impedit voluptate libero rem sit
-                                        reprehenderit
-                                        repudiandae atque! Consequatur nihil fuga eum.</p>
+                                    <div class="year space-x-2 text-3xl inline-flex text-mainColor">
+                                        <i class="bx bxs-calendar mr-2 text-3xl"></i>
+                                        2013 - 2018
+                                    </div>
+                                    <h3 class="text-3xl p-3 font-semibold">
+                                        master degree - computer science - ain shams university
+                                        -cairo
+                                    </h3>
+                                    <p class="text-2xl">
+                                        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                        Assumenda dolorem magni numquam itaque! Beatae quas saepe
+                                        odio suscipit, impedit voluptate libero rem sit
+                                        reprehenderit repudiandae atque! Consequatur nihil fuga
+                                        eum.
+                                    </p>
                                 </div>
                             </div>
 
                             <div class="education-content">
                                 <div class="content border-2 border-mainColor p-8 rounded-lg mb-4">
-                                    <div class="year space-x-2 text-3xl inline-flex text-mainColor"><i
-                                            class="bx bxs-calendar mr-2 text-3xl"></i>2013 -
-                                        2018</div>
-                                    <h3 class="text-3xl p-3 font-semibold">master degree - computer science - ain shams
-                                        university -cairo</h3>
-                                    <p class="text-2xl">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                                        Assumenda
-                                        dolorem
-                                        magni numquam
-                                        itaque! Beatae quas saepe odio suscipit, impedit voluptate libero rem sit
-                                        reprehenderit
-                                        repudiandae atque! Consequatur nihil fuga eum.</p>
+                                    <div class="year space-x-2 text-3xl inline-flex text-mainColor">
+                                        <i class="bx bxs-calendar mr-2 text-3xl"></i>
+                                        2013 - 2018
+                                    </div>
+                                    <h3 class="text-3xl p-3 font-semibold">
+                                        master degree - computer science - ain shams university
+                                        -cairo
+                                    </h3>
+                                    <p class="text-2xl">
+                                        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                        Assumenda dolorem magni numquam itaque! Beatae quas saepe
+                                        odio suscipit, impedit voluptate libero rem sit
+                                        reprehenderit repudiandae atque! Consequatur nihil fuga
+                                        eum.
+                                    </p>
                                 </div>
                             </div>
-
                         </div>
                     </div>
+                    <span class="animate " style="--i: 3;"></span>
                 </div>
 
                 <div class="education-col">
-                    <h3 class="title textHeading">education</h3>
-                    <div class="education-box mt-12">
-                        <div class="education-content relative ml-8 cursor-pointer">
-                            <div class="content border-2 border-mainColor p-8 rounded-lg mb-4">
-                                <div class="year space-x-2 text-3xl inline-flex text-mainColor"><i
-                                        class="bx bxs-calendar mr-2 text-3xl"></i>2013 -
-                                    2018</div>
-                                <h3 class="text-3xl p-3 font-semibold">master degree - computer science - ain shams
-                                    university -cairo</h3>
-                                <p class="text-2xl">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda
-                                    dolorem
-                                    magni numquam
-                                    itaque! Beatae quas saepe odio suscipit, impedit voluptate libero rem sit
-                                    reprehenderit
-                                    repudiandae atque! Consequatur nihil fuga eum.</p>
+                    <h3 class="title textHeading">
+                        education
+                        <span class="animate animate-scroll" style="--i: 6;"></span>
+                    </h3>
+                    <div class="education-box relative mt-12">
+                        <div class="relative ml-8 cursor-pointer">
+                            <div class="education-content">
+                                <div class="content border-2 border-mainColor p-8 rounded-lg mb-4">
+                                    <div class="year space-x-2 text-3xl inline-flex text-mainColor">
+                                        <i class="bx bxs-calendar mr-2 text-3xl"></i>
+                                        2013 - 2018
+                                    </div>
+                                    <h3 class="text-3xl p-3 font-semibold">
+                                        master degree - computer science - ain shams university
+                                        -cairo
+                                    </h3>
+                                    <p class="text-2xl">
+                                        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                        Assumenda dolorem magni numquam itaque! Beatae quas saepe
+                                        odio suscipit, impedit voluptate libero rem sit
+                                        reprehenderit repudiandae atque! Consequatur nihil fuga
+                                        eum.
+                                    </p>
+                                </div>
                             </div>
 
-                            <div class="content border-2 border-mainColor p-8 rounded-lg mb-4">
-                                <div class="year space-x-2 text-3xl inline-flex text-mainColor"><i
-                                        class="bx bxs-calendar mr-2 text-3xl"></i>2013 -
-                                    2018</div>
-                                <h3 class="text-3xl p-3 font-semibold">master degree - computer science - ain shams
-                                    university -cairo</h3>
-                                <p class="text-2xl">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda
-                                    dolorem
-                                    magni numquam
-                                    itaque! Beatae quas saepe odio suscipit, impedit voluptate libero rem sit
-                                    reprehenderit
-                                    repudiandae atque! Consequatur nihil fuga eum.</p>
+                            <div class="education-content">
+                                <div class="content border-2 border-mainColor p-8 rounded-lg mb-4">
+                                    <div class="year space-x-2 text-3xl inline-flex text-mainColor">
+                                        <i class="bx bxs-calendar mr-2 text-3xl"></i>
+                                        2013 - 2018
+                                    </div>
+                                    <h3 class="text-3xl p-3 font-semibold">
+                                        master degree - computer science - ain shams university
+                                        -cairo
+                                    </h3>
+                                    <p class="text-2xl">
+                                        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                        Assumenda dolorem magni numquam itaque! Beatae quas saepe
+                                        odio suscipit, impedit voluptate libero rem sit
+                                        reprehenderit repudiandae atque! Consequatur nihil fuga
+                                        eum.
+                                    </p>
+                                </div>
                             </div>
 
-                            <div class="content border-2 border-mainColor p-8 rounded-lg mb-4">
-                                <div class="year space-x-2 text-3xl inline-flex text-mainColor"><i
-                                        class="bx bxs-calendar mr-2 text-3xl"></i>2013 -
-                                    2018</div>
-                                <h3 class="text-3xl p-3 font-semibold">master degree - computer science - ain shams
-                                    university -cairo</h3>
-                                <p class="text-2xl">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda
-                                    dolorem
-                                    magni numquam
-                                    itaque! Beatae quas saepe odio suscipit, impedit voluptate libero rem sit
-                                    reprehenderit
-                                    repudiandae atque! Consequatur nihil fuga eum.</p>
+                            <div class="education-content">
+                                <div class="content border-2 border-mainColor p-8 rounded-lg mb-4">
+                                    <div class="year space-x-2 text-3xl inline-flex text-mainColor">
+                                        <i class="bx bxs-calendar mr-2 text-3xl"></i>
+                                        2013 - 2018
+                                    </div>
+                                    <h3 class="text-3xl p-3 font-semibold">
+                                        master degree - computer science - ain shams university
+                                        -cairo
+                                    </h3>
+                                    <p class="text-2xl">
+                                        Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                        Assumenda dolorem magni numquam itaque! Beatae quas saepe
+                                        odio suscipit, impedit voluptate libero rem sit
+                                        reprehenderit repudiandae atque! Consequatur nihil fuga
+                                        eum.
+                                    </p>
+                                </div>
                             </div>
-
                         </div>
                     </div>
+                    <span class="animate " style="--i: 7;"></span>
                 </div>
+
+
             </div>
         </section>
     </div>
     <!-- education end -->
 
     <!-- skills desing start -->
-    <div class="container mx-auto mb-12">
-        <section class="skills bg-secondBgColor p-12 pb-32" id="skills">
-            <h2 class="textHeading text-center p-12">My <span class="text-mainColor">Skills</span></h2>
+    <div class="container mx-auto mb-12" id="skills">
+        <section class="skills bg-secondBgColor p-12 pb-32">
+            <h2 class="textHeading text-center p-12">
+                My
+                <span class="text-mainColor">Skills</span>
+                <span class="animate scroll" style="--i: 1;"></span>
+            </h2>
             <div class="skills-row flex flex-col md:flex-row gap-4 mt-12">
                 <div class="skills-col w-full md:w-1/3">
-                    <h3 class="textHeading title">coding skills</h3>
+                    <h3 class="textHeading title">
+                        coding skills
+                        <span class="animate scroll" style="--i: 2;"></span>
+                    </h3>
                     <div class="skills-box">
-                        <div class="skills-content ">
+                        <div class="skills-content">
                             <div class="progress p-6">
-                                <h3 class="text-3xl flex justify-between">HTML <span class="text-mainColor">90%</span>
+                                <h3 class="text-3xl flex justify-between">
+                                    HTML
+                                    <span class="text-mainColor">90%</span>
                                 </h3>
                                 <div class="bar"><span></span></div>
                             </div>
 
                             <div class="progress p-6">
-                                <h3 class="text-3xl flex justify-between">HTML <span class="text-mainColor">90%</span>
+                                <h3 class="text-3xl flex justify-between">
+                                    HTML
+                                    <span class="text-mainColor">90%</span>
                                 </h3>
                                 <div class="bar"><span></span></div>
                             </div>
 
                             <div class="progress p-6">
-                                <h3 class="text-3xl flex justify-between">HTML <span class="text-mainColor">90%</span>
+                                <h3 class="text-3xl flex justify-between">
+                                    HTML
+                                    <span class="text-mainColor">90%</span>
                                 </h3>
                                 <div class="bar"><span></span></div>
                             </div>
 
                             <div class="progress p-6">
-                                <h3 class="text-3xl flex justify-between">HTML <span class="text-mainColor">90%</span>
+                                <h3 class="text-3xl flex justify-between">
+                                    HTML
+                                    <span class="text-mainColor">90%</span>
                                 </h3>
                                 <div class="bar"><span></span></div>
                             </div>
                         </div>
+                        <span class="animate scroll" style="--i: 3;"></span>
                     </div>
                 </div>
 
                 <div class="skills-col w-full md:w-1/3">
-                    <h3 class="textHeading title">coding skills</h3>
+                    <h3 class="textHeading title">
+                        coding skills
+                        <span class="animate scroll" style="--i: 4;"></span>
+                    </h3>
                     <div class="skills-box">
-                        <div class="skills-content ">
+                        <div class="skills-content">
                             <div class="progress p-6">
-                                <h3 class="text-3xl flex justify-between">HTML <span class="text-mainColor">90%</span>
+                                <h3 class="text-3xl flex justify-between">
+                                    HTML
+                                    <span class="text-mainColor">90%</span>
                                 </h3>
                                 <div class="bar"><span></span></div>
                             </div>
 
                             <div class="progress p-6">
-                                <h3 class="text-3xl flex justify-between">HTML <span class="text-mainColor">90%</span>
+                                <h3 class="text-3xl flex justify-between">
+                                    HTML
+                                    <span class="text-mainColor">90%</span>
                                 </h3>
                                 <div class="bar"><span></span></div>
                             </div>
 
                             <div class="progress p-6">
-                                <h3 class="text-3xl flex justify-between">HTML <span class="text-mainColor">90%</span>
+                                <h3 class="text-3xl flex justify-between">
+                                    HTML
+                                    <span class="text-mainColor">90%</span>
                                 </h3>
                                 <div class="bar"><span></span></div>
                             </div>
 
                             <div class="progress p-6">
-                                <h3 class="text-3xl flex justify-between">HTML <span class="text-mainColor">90%</span>
+                                <h3 class="text-3xl flex justify-between">
+                                    HTML
+                                    <span class="text-mainColor">90%</span>
                                 </h3>
                                 <div class="bar"><span></span></div>
                             </div>
                         </div>
+                        <span class="animate scroll" style="--i: 5;"></span>
                     </div>
                 </div>
 
                 <div class="skills-col w-full md:w-1/3">
-                    <h3 class="textHeading title">coding skills</h3>
+                    <h3 class="textHeading title">
+                        coding skills
+                        <span class="animate scroll" style="--i: 6;"></span>
+                    </h3>
                     <div class="skills-box">
-                        <div class="skills-content ">
+                        <div class="skills-content">
                             <div class="progress p-6">
-                                <h3 class="text-3xl flex justify-between">HTML <span class="text-mainColor">90%</span>
+                                <h3 class="text-3xl flex justify-between">
+                                    HTML
+                                    <span class="text-mainColor">90%</span>
                                 </h3>
                                 <div class="bar"><span></span></div>
                             </div>
 
                             <div class="progress p-6">
-                                <h3 class="text-3xl flex justify-between">HTML <span class="text-mainColor">90%</span>
+                                <h3 class="text-3xl flex justify-between">
+                                    HTML
+                                    <span class="text-mainColor">90%</span>
                                 </h3>
                                 <div class="bar"><span></span></div>
                             </div>
 
                             <div class="progress p-6">
-                                <h3 class="text-3xl flex justify-between">HTML <span class="text-mainColor">90%</span>
+                                <h3 class="text-3xl flex justify-between">
+                                    HTML
+                                    <span class="text-mainColor">90%</span>
                                 </h3>
                                 <div class="bar"><span></span></div>
                             </div>
 
                             <div class="progress p-6">
-                                <h3 class="text-3xl flex justify-between">HTML <span class="text-mainColor">90%</span>
+                                <h3 class="text-3xl flex justify-between">
+                                    HTML
+                                    <span class="text-mainColor">90%</span>
                                 </h3>
                                 <div class="bar"><span></span></div>
                             </div>
                         </div>
+                        <span class="animate scroll" style="--i: 7;"></span>
                     </div>
                 </div>
             </div>
@@ -325,41 +443,50 @@
     <!-- skills end -->
 
     <!-- contact design start -->
-    <div class="container mx-auto mb-12">
-        <section class="contact pb-32" id="contact">
-            <h2 class="textHeading text-center p-12">Contact <span class="text-mainColor">Me</span></h2>
+    <div class="container mx-auto mb-12" id="contact">
+        <section class="contact pb-32">
+            <h2 class="textHeading text-center p-12">
+                Contact
+                <span class="text-mainColor">Me</span>
+                <span class="animate" style="--i: 1;"></span>
+            </h2>
             <form action="#">
                 <div class="input-box flex flex-col md:flex-row md:justify-between">
                     <div class="input-field">
-                        <input type="text" placeholder="Full Name" required>
+                        <input type="text" placeholder="Full Name" required />
                         <span class="focus"></span>
                     </div>
 
                     <div class="input-field">
-                        <input type="text" placeholder="Email Address" required>
+                        <input type="text" placeholder="Email Address" required />
                         <span class="focus"></span>
                     </div>
+
+                    <span class="animate" style="--i: 2;"></span>
                 </div>
 
                 <div class="input-box flex flex-col md:flex-row md:justify-between">
                     <div class="input-field">
-                        <input type="text" placeholder="Mobile Number" required>
+                        <input type="text" placeholder="Mobile Number" required />
                         <span class="focus"></span>
                     </div>
 
                     <div class="input-field">
-                        <input type="text" placeholder="Email Subject" required>
+                        <input type="text" placeholder="Email Subject" required />
                         <span class="focus"></span>
                     </div>
+                    <span class="animate" style="--i: 3;"></span>
                 </div>
 
                 <div class="textarea-field">
                     <textarea name="" id="" cols="30" rows="10" placeholder="Your Message Here"></textarea>
                     <span class="focus"></span>
+                    <span class="animate" style="--i: 4;"></span>
                 </div>
 
                 <div class="btn-box btnss w-full mt-8 text-center flex justify-center">
                     <button class="btn-bg-animated">submit</button>
+                    <span class="animate" style="--i: 5;"></span>
                 </div>
             </form>
         </section>
@@ -369,10 +496,14 @@
     <!-- footer start -->
     <div class="footer flex justify-between items-center p-12 bg-secondBgColor">
         <div class="footer-text text-3xl">
-            <p class="capitalize">copyright &copy; 2023 by saeed | all rights reserved</p>
+            <p class="capitalize">
+                copyright &copy; 2023 by saeed | all rights reserved
+            </p>
         </div>
         <div class="iconTop">
-            <a href="#" class="text-3xl text-white"><i class="bx bx-up-arrow-alt"></i></a>
+            <a href="#" class="text-3xl text-white">
+                <i class="bx bx-up-arrow-alt"></i>
+            </a>
         </div>
     </div>
 
