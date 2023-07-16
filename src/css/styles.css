@@ -99,8 +99,36 @@ body {
   width: 32.8rem;
 }
 
+/*animated text*/
 .text-animate h3 {
   -webkit-text-stroke: 0.7px var(--mainColor);
+  background-image: linear-gradient(var(--mainColor), var(--mainColor));
+  background-repeat: no-repeat;
+  -webkit-background-clip: text;
+  background-position: 0rem 0;
+  animation: titleText 6s linear infinite;
+}
+.text-animate h3::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 0;
+  height: 100%;
+  border-right: 2px solid var(--mainColor);
+  z-index: -1;
+}
+
+@keyframes titleText {
+  0%,
+  10%,
+  100% {
+    background-position: -33rem 0;
+  }
+  65%,
+  85% {
+    background-position: 0 0;
+  }
 }
 
 .btn-box {
@@ -208,6 +236,13 @@ body {
   border-bottom: 0.2em solid var(--secondBgColor);
   border-right: 0.2em solid var(--mainColor);
   border-left: 0.2em solid var(--mainColor);
+  animation: aboutSpinner 8s linear infinite;
+}
+
+@keyframes aboutSpinner {
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
 }
 
 .aboutBtnBox {
