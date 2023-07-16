@@ -41,6 +41,22 @@
 html {
   font-size: 62.5%;
   overflow-x: hidden;
+  scrollbar-width: thin;
+  scrollbar-color: var(--mainColor) var(--mainColor);
+}
+html::-webkit-scrollbar {
+  width: 7px;
+  scrollbar-color: var(--mainColor) var(--mainColor);
+  background-color: var(--mainColor);
+  border-radius: 3px;
+  border: 1px solid var(--bgColor);
+}
+html::-webkit-scrollbar-thumb {
+  height: 10px;
+  border: 1px solid var(--secondBgColor);
+  border-radius: 3rem;
+  color: var(--bgColor);
+  background: var(--textColor);
 }
 
 body {
@@ -52,11 +68,19 @@ body {
   padding: 2rem 9%;
   background: transparent;
   transition: 0.5s ease;
-  z-index: 2;
+  z-index: 8;
+}
+
+.logo {
+  position: relative;
 }
 
 .header.sticky {
   background: var(--bgColor);
+}
+
+.navbar {
+  position: relative;
 }
 
 .navbar a {
@@ -68,6 +92,7 @@ body {
 
 #menu-icon {
   display: none;
+  position: relative;
 }
 
 /*section*/
@@ -91,9 +116,14 @@ body {
 
 .home-content {
   max-width: 60rem;
+  z-index: 5;
 }
 .home-content h1 {
+  position: relative;
   line-height: 1.5;
+}
+.home-content p {
+  position: relative;
 }
 .text-animate {
   width: 32.8rem;
@@ -132,6 +162,7 @@ body {
 }
 
 .btn-box {
+  position: relative;
   width: 34.5rem;
   height: 5rem;
 }
@@ -212,7 +243,7 @@ body {
 /* hover profile effect */
 .homeImageHover {
   position: absolute;
-  width: 45%;
+  width: 55%;
   right: 0;
   top: 0;
   height: 100%;
@@ -224,6 +255,24 @@ body {
 }
 
 /*about*/
+.about {
+  position: relative;
+}
+.about-content p,
+.about-content h3,
+.about-content .btn-box {
+  position: relative;
+  display: inline-block;
+}
+.about-content h3 {
+  line-height: unset;
+}
+.about h2 {
+  position: relative;
+}
+.about-img {
+  position: relative;
+}
 .about-img .circle-spin {
   position: absolute;
   top: 50%;
@@ -250,7 +299,21 @@ body {
 }
 
 /*education*/
-
+.education {
+  position: relative;
+}
+.education .title {
+  width: 100%;
+}
+.education h2,
+.education p,
+.education .title,
+.education-col {
+  position: relative;
+}
+.education h2 {
+  line-height: unset;
+}
 .education .education-box {
   border-left: 0.2em solid var(--mainColor);
 }
@@ -293,6 +356,11 @@ body {
 /* skills */
 .skills {
   min-height: auto;
+  position: relative;
+}
+.skills h2,
+.skills .title,
+.skills .skills-col {
   position: relative;
 }
 
@@ -345,10 +413,17 @@ body {
 .contact {
   min-height: auto;
 }
+#contact {
+  padding: 3rem 0 8rem;
+}
+
+.contact h2 {
+  position: relative;
+}
 
 .contact form {
   text-align: center;
-  max-width: 70rem;
+  max-width: 100rem;
   margin: 0 auto;
 }
 
@@ -361,7 +436,9 @@ body {
   width: 49%;
   margin: 0.8rem 0;
 }
-
+.textarea-field {
+  position: relative;
+}
 .contact form .input-box .input-field input,
 .contact form .textarea-field textarea {
   width: 100%;
@@ -544,6 +621,9 @@ body {
   .contact form .input-box .input-field {
     width: 100%;
   }
+  .contact {
+    margin: 10px;
+  }
 }
 
 @media (max-width: 371px) {
@@ -558,5 +638,63 @@ body {
   }
   .footer p {
     margin-top: 2rem;
+  }
+}
+
+/* animation on reload && scroll */
+
+.animate {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--bgColor);
+  z-index: 98;
+}
+
+.logo .animate,
+.navbar .animate,
+#menu-icon .animate,
+.show-animate .animate {
+  animation: showRight 1s forwards;
+  animation-delay: calc(0.3s * var(--i));
+}
+
+.animate.scroll {
+  transition: 1s ease;
+  transition-delay: calc(0.3s / var(--i));
+}
+.education .animate {
+  width: 110%;
+  left: -11px !important;
+}
+.about.show-animate .animate.scroll,
+.education.showanimate .education-box .animate.scroll,
+.skills.show-animate .animate.scroll,
+.contact.show-animate .animate.scroll {
+  transition-delay: calc(0.1s * var(--i));
+  animation: none;
+
+  width: 0;
+}
+
+section:nth-child(odd) .animate.scroll {
+  background: var(--secondBgColor);
+}
+.about .about-img .animate.scroll {
+  width: 116%;
+  height: 116%;
+  right: 3rem;
+  margin-top: -2rem;
+  margin-left: -2rem;
+}
+
+.education-content .animate {
+  left: -2rem !important;
+}
+@keyframes showRight {
+  100% {
+    width: 0;
   }
 }
